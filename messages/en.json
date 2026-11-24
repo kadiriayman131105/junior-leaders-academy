@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Junior Leaders Academy | Private school in Deroua",
+    "description": "Private preschool and primary school in Deroua (Nouaceur). Arabic, French and English. Enrollment open for 2026-2027. 06 61 10 75 11.",
+    "careersTitle": "Teacher recruitment",
+    "careersDescription": "Junior Leaders Academy is hiring preschool and primary teachers in Deroua. At least 3 years of experience.",
+    "legalTitle": "Legal notice"
+  },
+  "nav": {
+    "school": "The school",
+    "programs": "Cycles",
+    "photos": "Photos",
+    "contact": "Contact",
+    "enroll": "Enroll",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "badge": "Enrollment 2026-2027 is open",
+    "kicker": "Private school · Deroua",
+    "motto": "",
+    "title": "Where leaders begin their journey",
+    "lead": "Preschool and primary, in Arabic, French and English. A place to grow, speak up and try.",
+    "enroll": "Enroll my child",
+    "whatsapp": "Message on WhatsApp",
+    "chip": "Deroua · Nouaceur",
+    "photoAlt": "Junior Leaders Academy cover"
+  },
+  "facts": {
+    "langs": "3 languages",
+    "langsSub": "Arabic, French and English",
+    "cycles": "2 cycles",
+    "cyclesSub": "Preschool and primary",
+    "place": "Deroua",
+    "placeSub": "Nouaceur province"
+  },
+  "why": {
+    "eyebrow": "The school",
+    "title": "What the school nurtures, every day",
+    "items": [
+      {
+        "title": "Three languages, from the start",
+        "text": "Arabic, French and English are part of the day, so each child can speak in all three."
+      },
+      {
+        "title": "Leadership, while they are small",
+        "text": "Speaking up, helping a classmate, daring to try. The school motto lives in the classroom."
+      },
+      {
+        "title": "Confidence and creativity",
+        "text": "Play, projects and the right to make mistakes are part of learning."
+      },
+      {
+        "title": "Moroccan roots",
+        "text": "Civic values and Moroccan culture sit alongside languages and knowledge."
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Cycles",
+    "title": "From preschool to primary",
+    "lead": "Two cycles, one idea: a child at ease speaking, making and learning.",
+    "preKicker": "Preschool",
+    "preTitle": "Early years",
+    "preText": "Language, movement, life in a group, and the first responsibilities. Children come to play, talk and grow confident.",
+    "priKicker": "Six years",
+    "priTitle": "Primary",
+    "priText": "Reading, writing, numbers, and understanding. Three languages support a solid base and real independence.",
+    "cta": "Ask about this level"
+  },
+  "approach": {
+    "eyebrow": "Approach",
+    "title": "Where Leaders Begin Their Journey",
+    "text": "A child who knows themselves, respects others, and wants to learn. That is the path the school opens from the first day.",
+    "points": [
+      "Speak in front of others",
+      "Work and play together",
+      "Stay curious, in three languages"
+    ]
+  },
+  "photos": {
+    "eyebrow": "Photos",
+    "title": "The school, in pictures",
+    "lead": "Class days, announcements and life at school.",
+    "tea": "Children preparing tea, in traditional dress",
+    "flags": "Pupils with the Moroccan flag",
+    "caftan": "Three pupils in caftan",
+    "paint": "Painting workshop",
+    "girl": "Art workshop: decorating a pomegranate",
+    "boy": "Art workshop: decorating a pomegranate",
+    "latest": "Latest posts",
+    "album": "School photos",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "igTitle": "Daily life on Instagram",
+    "igText": "Announcements, class days and news from the school.",
+    "igCta": "See the posts",
+    "fbTitle": "The Facebook album",
+    "fbText": "Photos published on the school page.",
+    "fbCta": "See the album",
+    "openPost": "View post",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo"
+  },
+  "steps": {
+    "eyebrow": "Enrollment",
+    "title": "Three straightforward steps",
+    "items": [
+      {
+        "title": "Write to us",
+        "text": "A WhatsApp message or the form. Tell us the age or grade, and your neighbourhood if you need transport."
+      },
+      {
+        "title": "Come and see",
+        "text": "Monday to Saturday, 9:00 to 18:30. Lotissement Al Tayssir, behind the Al Madina mosque."
+      },
+      {
+        "title": "We enroll together",
+        "text": "Fees, transport and supplies are set with the administration, on site."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Before your visit",
+    "items": [
+      {
+        "q": "Are the fees online?",
+        "a": "No. Tuition, transport and supplies are given by the administration at 06 61 10 75 11."
+      },
+      {
+        "q": "Which languages are taught?",
+        "a": "Arabic, French and English."
+      },
+      {
+        "q": "Which grades do you take?",
+        "a": "Preschool and the whole of primary."
+      },
+      {
+        "q": "Where exactly is the school?",
+        "a": "Lotissement Al Tayssir, no. 01, behind the Al Madina mosque, Deroua, Nouaceur province."
+      },
+      {
+        "q": "When can we visit?",
+        "a": "Monday to Saturday, 9:00 to 18:30, for enrollment and visits."
+      },
+      {
+        "q": "Which school year?",
+        "a": "Enrollment is open for 2026-2027."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Tell us about your child",
+    "lead": "The form arrives by email. WhatsApp opens the conversation right away.",
+    "addressLabel": "Address",
+    "address": "Lotissement Al Tayssir, no. 01, behind the Al Madina mosque, Deroua, Nouaceur province.",
+    "hoursLabel": "Visits and enrollment",
+    "hours": "Monday – Saturday, 9:00 – 18:30",
+    "phoneLabel": "Phone and WhatsApp",
+    "socialLabel": "Social",
+    "directions": "Open in Google Maps",
+    "mapTitle": "Map of Junior Leaders Academy in Deroua",
+    "levels": [
+      { "value": "ps3", "label": "Preschool · age 3" },
+      { "value": "ps4", "label": "Preschool · age 4" },
+      { "value": "ps5", "label": "Preschool · age 5" },
+      { "value": "ap1", "label": "Primary · year 1" },
+      { "value": "ap2", "label": "Primary · year 2" },
+      { "value": "ap3", "label": "Primary · year 3" },
+      { "value": "ap4", "label": "Primary · year 4" },
+      { "value": "ap5", "label": "Primary · year 5" },
+      { "value": "ap6", "label": "Primary · year 6" }
+    ],
+    "form": {
+      "name": "Your name",
+      "phone": "Phone",
+      "email": "Email (optional)",
+      "area": "Neighbourhood (optional)",
+      "areaPlaceholder": "For the journey or the school bus",
+      "level": "Child's age or grade",
+      "levelPlaceholder": "Choose",
+      "message": "Message (optional)",
+      "messagePlaceholder": "A question, a detail…",
+      "submit": "Send by email",
+      "whatsapp": "Send on WhatsApp",
+      "sending": "Sending…",
+      "privacy": "Your details are used only to reply about enrollment.",
+      "success": "Received. The school will get back to you shortly.",
+      "whatsappContinue": "Continue on WhatsApp",
+      "invalid": "Add your name, a phone number and the child's grade.",
+      "rate": "Too many messages at once. Write to us on WhatsApp.",
+      "send": "The email did not go out. The WhatsApp link below sends the same request.",
+      "mail": "The school inbox is not connected yet. Send the request on WhatsApp: it reaches the school directly.",
+      "parentSubject": "Your enrollment request — Junior Leaders Academy",
+      "parentHello": "Hello {name},",
+      "parentBody": "We have received your request for {level}. The school will reply at {phone}.",
+      "waHello": "Hello Junior Leaders Academy, I would like to enroll a child.",
+      "waParent": "Parent:",
+      "waPhone": "Phone:",
+      "waLevel": "Grade:",
+      "waArea": "Neighbourhood:",
+      "website": "Website"
+    }
+  },
+  "footer": {
+    "motto": "Where Leaders Begin Their Journey",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "tagline": "Private preschool and primary school in Deroua.",
+    "visit": "Visit the school",
+    "recruit": "Teachers: we are hiring",
+    "legal": "Legal notice",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "hero": "Hello Junior Leaders Academy, I would like information about enrolling my child.",
+    "label": "Message on WhatsApp",
+    "call": "Call the school"
+  },
+  "careers": {
+    "eyebrow": "Careers",
+    "title": "Teach at Junior Leaders Academy",
+    "lead": "The school is hiring qualified preschool and primary teachers. At least 3 years of experience is requested.",
+    "back": "Back to the home page",
+    "roles": [
+      { "value": "preschool", "label": "Preschool" },
+      { "value": "primary", "label": "Primary" },
+      { "value": "both", "label": "Both" }
+    ],
+    "experiences": [
+      { "value": "under3", "label": "Under 3 years" },
+      { "value": "y3", "label": "3 years" },
+      { "value": "y4to5", "label": "4 to 5 years" },
+      { "value": "y6to10", "label": "6 to 10 years" },
+      { "value": "y10plus", "label": "More than 10 years" }
+    ],
+    "form": {
+      "name": "Your name",
+      "phone": "Phone",
+      "email": "Email",
+      "role": "Cycle",
+      "experience": "Experience",
+      "message": "A few words",
+      "messagePlaceholder": "Grades already taught, languages…",
+      "cv": "CV (PDF or Word, 4 MB maximum)",
+      "submit": "Send my application",
+      "whatsapp": "Write on WhatsApp",
+      "sending": "Sending…",
+      "privacy": "This file is used only for recruitment.",
+      "success": "Application sent. The school will get back to you.",
+      "invalid": "Add your name, a phone number, an email, the cycle and your experience.",
+      "file": "The CV must be a PDF or Word file of 4 MB or less.",
+      "rate": "Too many messages. Write to us on WhatsApp.",
+      "send": "The email did not go out. Send the application on WhatsApp, with the CV.",
+      "mail": "The inbox is not connected yet. Send your application on WhatsApp and attach the CV in the chat.",
+      "waHello": "Hello, I would like to apply as a teacher at Junior Leaders Academy.",
+      "waName": "Name:",
+      "waPhone": "Phone:",
+      "waEmail": "Email:",
+      "waRole": "Cycle:",
+      "waExperience": "Experience:",
+      "choose": "Choose"
+    }
+  },
+  "legal": {
+    "title": "Legal notice",
+    "intro": "The details below identify the school and the company behind it.",
+    "schoolLabel": "School",
+    "legalLabel": "Company",
+    "seatLabel": "Registered office",
+    "phoneLabel": "Phone and WhatsApp",
+    "activity": "Junior Leaders Academy Privé is a limited company (SARL) in private preschool and primary education.",
+    "fees": "Tuition, transport and supply lists are not published online. Ask the administration.",
+    "back": "Back to the home page"
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "text": "The link may be out of date. The school home page is one click away.",
+    "back": "Back to the home page"
+  }
+}

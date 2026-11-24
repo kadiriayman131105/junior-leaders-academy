@@ -1,0 +1,13 @@
+export function tooMany(key: string, limit = 6, windowMs = 15 * 60 * 1000) {
+  const store = globalThis as { __jlaHits?: Map<string, number[]> };
+  const hits: Map<string, number[]> = (store.__jlaHits ??= new Map<string, number[]>());
+  const now = Date.now();
+  const recent = (hits.get(key) ?? []).filter((time: number) => now - time < windowMs);
+  if (recent.length >= limit) {
+    hits.set(key, recent);
+    return true;
+  }
+  recent.push(now);
+  hits.set(key, recent);
+  return false;
+}
