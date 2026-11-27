@@ -27,26 +27,26 @@ export default async function LegalPage({ params }: { params: Promise<{ locale: 
   return (
     <article className="shell max-w-3xl py-12 sm:py-16">
       <p className="text-sm font-bold text-ember">Junior Leaders Academy</p>
-      <h1 className="display mt-2 font-extrabold text-navy">{t("title")}</h1>
+      <h1 className="display mt-2 font-extrabold text-ink">{t("title")}</h1>
       <p className="mt-4 text-lg leading-relaxed text-muted">{t("intro")}</p>
       <dl className="mt-8 space-y-5 leading-relaxed">
         <div>
-          <dt className="font-extrabold text-navy">{t("legalLabel")}</dt>
+          <dt className="font-extrabold text-ink">{t("legalLabel")}</dt>
           <dd className="text-muted">{site.legalName}</dd>
           <dd className="text-muted">{t("activity")}</dd>
         </div>
         <div>
-          <dt className="font-extrabold text-navy">{t("seatLabel")}</dt>
+          <dt className="font-extrabold text-ink">{t("seatLabel")}</dt>
           <dd className="text-muted">{site.legalAddress}</dd>
         </div>
         <div>
-          <dt className="font-extrabold text-navy">{t("schoolLabel")}</dt>
+          <dt className="font-extrabold text-ink">{t("schoolLabel")}</dt>
           <dd className="text-muted">{contact("address")}</dd>
         </div>
         <div>
-          <dt className="font-extrabold text-navy">{t("phoneLabel")}</dt>
+          <dt className="font-extrabold text-ink">{t("phoneLabel")}</dt>
           <dd>
-            <a className="inline-block font-bold text-navy" dir="ltr" href={`tel:${site.phoneTel}`}>
+            <a className="inline-block font-bold text-ink" dir="ltr" href={`tel:${site.phoneTel}`}>
               {site.phoneDisplay}
             </a>
           </dd>

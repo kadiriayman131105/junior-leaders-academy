@@ -45,10 +45,10 @@ export async function HomeView({
             {hero("badge")}
           </p>
           <p className="mt-5 text-sm font-bold text-ember">{hero("kicker")}</p>
-          <h1 className="display-lg mt-2 font-extrabold text-navy">
+          <h1 className="display-lg mt-2 font-extrabold text-ink">
             {hero("title")}
           </h1>
-          {hero("motto") ? <p className="mt-3 text-sm font-semibold text-navy/70">{hero("motto")}</p> : null}
+          {hero("motto") ? <p className="mt-3 text-sm font-semibold text-ink/70">{hero("motto")}</p> : null}
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">{hero("lead")}</p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a href="#contact" className={btnPrimary}>
@@ -59,7 +59,7 @@ export async function HomeView({
               {hero("whatsapp")}
             </a>
           </div>
-          <a href={`tel:${site.phoneTel}`} dir="ltr" className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-navy">
+          <a href={`tel:${site.phoneTel}`} dir="ltr" className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-ink">
             <PhoneIcon className="h-4 w-4 text-ember" />
             {site.phoneDisplay}
           </a>
@@ -76,7 +76,7 @@ export async function HomeView({
               className="object-cover"
             />
           </div>
-          <p className="absolute bottom-3 start-3 max-w-[calc(100%-1.5rem)] rounded-full bg-white/95 px-3 py-1.5 text-xs font-extrabold text-navy shadow sm:bottom-4 sm:start-4">
+          <p className="absolute bottom-3 start-3 max-w-[calc(100%-1.5rem)] rounded-full bg-card/95 px-3 py-1.5 text-xs font-extrabold text-ink shadow sm:bottom-4 sm:start-4">
             {hero("chip")}
           </p>
         </div>
@@ -89,17 +89,17 @@ export async function HomeView({
           [facts("cycles"), facts("cyclesSub")],
           [facts("place"), facts("placeSub")],
         ].map(([title, text]) => (
-          <div key={title} className="rounded-3xl bg-white px-5 py-4 shadow-card">
-            <p className="text-lg font-extrabold text-navy">{title}</p>
+          <div key={title} className="rounded-3xl bg-card px-5 py-4 shadow-card">
+            <p className="text-lg font-extrabold text-ink">{title}</p>
             <p className="mt-1 text-sm text-muted">{text}</p>
           </div>
         ))}
       </section>
 
-      <section id="ecole" className="scroll-mt-28 bg-white py-14 sm:py-20 xl:py-24">
+      <section id="ecole" className="scroll-mt-28 bg-band py-14 sm:py-20 xl:py-24">
         <div className="shell">
           <p className="text-sm font-bold text-ember">{why("eyebrow")}</p>
-          <h2 className="display mt-2 max-w-2xl font-extrabold text-navy">{why("title")}</h2>
+          <h2 className="display mt-2 max-w-2xl font-extrabold text-ink">{why("title")}</h2>
           <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 xl:grid-cols-4">
             {whyItems.map((item, index) => {
               const Icon = whyIcons[index] ?? SparkIcon;
@@ -108,7 +108,7 @@ export async function HomeView({
                   <span className="grid h-12 w-12 place-items-center rounded-2xl bg-orange-soft text-ember">
                     <Icon />
                   </span>
-                  <h3 className="mt-4 text-xl font-extrabold text-navy">{item.title}</h3>
+                  <h3 className="mt-4 text-xl font-extrabold text-ink">{item.title}</h3>
                   <p className="mt-2 leading-relaxed text-muted">{item.text}</p>
                 </article>
               );
@@ -120,13 +120,13 @@ export async function HomeView({
       <section id="cycles" className="scroll-mt-28 py-14 sm:py-20 xl:py-24">
         <div className="shell">
           <p className="text-sm font-bold text-ember">{programs("eyebrow")}</p>
-          <h2 className="display mt-2 max-w-2xl font-extrabold text-navy">{programs("title")}</h2>
+          <h2 className="display mt-2 max-w-2xl font-extrabold text-ink">{programs("title")}</h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">{programs("lead")}</p>
           <div className="mt-8 grid gap-4 md:grid-cols-2 sm:mt-10">
             <article className="rounded-[1.35rem] bg-orange-soft p-5 sm:rounded-[1.75rem] sm:p-7">
               <p className="text-sm font-extrabold text-ember">{programs("preKicker")}</p>
-              <h3 className="mt-2 text-2xl font-extrabold text-navy sm:text-3xl">{programs("preTitle")}</h3>
-              <p className="mt-4 max-w-md leading-relaxed text-navy/80">{programs("preText")}</p>
+              <h3 className="mt-2 text-2xl font-extrabold text-ink sm:text-3xl">{programs("preTitle")}</h3>
+              <p className="mt-4 max-w-md leading-relaxed text-ink/80">{programs("preText")}</p>
               <a href="#contact" className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-navy px-5 py-3 text-sm font-extrabold text-white sm:w-auto">
                 {programs("cta")}
               </a>
@@ -159,11 +159,11 @@ export async function HomeView({
         </div>
       </section>
 
-      <section id="photos" className="scroll-mt-28 bg-white py-14 sm:py-20 xl:py-24">
+      <section id="photos" className="scroll-mt-28 bg-band py-14 sm:py-20 xl:py-24">
         <div className="shell">
           <div className="max-w-2xl">
             <p className="text-sm font-bold text-ember">{photos("eyebrow")}</p>
-            <h2 className="display mt-2 font-extrabold text-navy">{photos("title")}</h2>
+            <h2 className="display mt-2 font-extrabold text-ink">{photos("title")}</h2>
             <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{photos("lead")}</p>
           </div>
 
@@ -182,24 +182,24 @@ export async function HomeView({
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-2 sm:mt-8 sm:max-w-md">
-            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-navy/15 bg-white px-3 py-3 text-center text-sm font-bold text-navy transition hover:border-ember hover:bg-orange-soft sm:text-base">
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-line bg-card px-3 py-3 text-center text-sm font-bold text-ink transition hover:border-ember hover:bg-orange-soft sm:text-base">
               <InstagramIcon className="h-5 w-5 shrink-0" /> {photos("instagram")}
             </a>
-            <a href={site.facebookPhotos} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-navy/15 bg-white px-3 py-3 text-center text-sm font-bold text-navy transition hover:border-ember hover:bg-orange-soft sm:text-base">
+            <a href={site.facebookPhotos} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border border-line bg-card px-3 py-3 text-center text-sm font-bold text-ink transition hover:border-ember hover:bg-orange-soft sm:text-base">
               <FacebookIcon className="h-5 w-5 shrink-0" /> {photos("facebook")}
             </a>
           </div>
 
           {instagram.length > 0 ? (
             <div className="mt-10">
-              <h3 className="mb-4 text-lg font-extrabold text-navy">{photos("latest")}</h3>
+              <h3 className="mb-4 text-lg font-extrabold text-ink">{photos("latest")}</h3>
               <PhotoGrid photos={instagram} />
             </div>
           ) : null}
 
           {gallery.length > 0 ? (
             <div className="mt-10">
-              <h3 className="mb-4 text-lg font-extrabold text-navy">{photos("album")}</h3>
+              <h3 className="mb-4 text-lg font-extrabold text-ink">{photos("album")}</h3>
               <PhotoGrid photos={gallery} />
             </div>
           ) : null}
@@ -207,11 +207,11 @@ export async function HomeView({
           {instagram.length === 0 || gallery.length === 0 ? (
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {instagram.length === 0 ? (
-                <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="min-w-0 rounded-[1.35rem] bg-paper p-5 ring-1 ring-line transition hover:-translate-y-0.5 sm:rounded-[1.75rem] sm:p-6">
-                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-ember shadow-sm">
+                <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="min-w-0 rounded-[1.35rem] bg-card p-5 ring-1 ring-line transition hover:-translate-y-0.5 sm:rounded-[1.75rem] sm:p-6">
+                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-card text-ember shadow-sm">
                     <InstagramIcon className="h-5 w-5" />
                   </span>
-                  <h3 className="mt-4 text-xl font-extrabold text-navy">{photos("igTitle")}</h3>
+                  <h3 className="mt-4 text-xl font-extrabold text-ink">{photos("igTitle")}</h3>
                   <p className="mt-2 text-muted">{photos("igText")}</p>
                   <p className="mt-4 break-all text-sm font-extrabold text-ember">{photos("igCta")} · {site.instagramHandle}</p>
                 </a>
@@ -234,12 +234,12 @@ export async function HomeView({
       <section id="inscription" className="scroll-mt-28 py-14 sm:py-20 xl:py-24">
         <div className="shell">
           <p className="text-sm font-bold text-ember">{steps("eyebrow")}</p>
-          <h2 className="display mt-2 max-w-2xl font-extrabold text-navy">{steps("title")}</h2>
+          <h2 className="display mt-2 max-w-2xl font-extrabold text-ink">{steps("title")}</h2>
           <ol className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-3">
             {stepItems.map((item, index) => (
-              <li key={item.title} className="rounded-[1.75rem] bg-white p-6 shadow-card">
+              <li key={item.title} className="rounded-[1.75rem] bg-card p-6 shadow-card">
                 <span className="grid h-11 w-11 place-items-center rounded-2xl bg-orange text-lg font-extrabold text-navy">0{index + 1}</span>
-                <h3 className="mt-5 text-xl font-extrabold text-navy">{item.title}</h3>
+                <h3 className="mt-5 text-xl font-extrabold text-ink">{item.title}</h3>
                 <p className="mt-2 leading-relaxed text-muted">{item.text}</p>
               </li>
             ))}
@@ -247,15 +247,15 @@ export async function HomeView({
         </div>
       </section>
 
-      <section className="bg-white py-14 sm:py-20 xl:py-24">
+      <section className="bg-band py-14 sm:py-20 xl:py-24">
         <div className="shell">
           <div className="mx-auto max-w-3xl">
           <p className="text-sm font-bold text-ember">{faq("eyebrow")}</p>
-          <h2 className="display mt-2 font-extrabold text-navy">{faq("title")}</h2>
+          <h2 className="display mt-2 font-extrabold text-ink">{faq("title")}</h2>
           <div className="mt-8 divide-y divide-line">
             {faqItems.map((item) => (
               <details key={item.q} className="group py-4">
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-3 text-base font-extrabold text-navy sm:items-center sm:gap-4 sm:text-lg">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-3 text-base font-extrabold text-ink sm:items-center sm:gap-4 sm:text-lg">
                   {item.q}
                   <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-orange-soft text-xl text-ember transition group-open:rotate-45">+</span>
                 </summary>
@@ -271,24 +271,24 @@ export async function HomeView({
         <div className="shell grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
           <div className="order-2 lg:order-1">
             <p className="text-sm font-bold text-ember">{contact("eyebrow")}</p>
-            <h2 className="display mt-2 font-extrabold text-navy">{contact("title")}</h2>
+            <h2 className="display mt-2 font-extrabold text-ink">{contact("title")}</h2>
             <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{contact("lead")}</p>
             <dl className="mt-8 space-y-5 text-sm">
               <div>
-                <dt className="font-extrabold text-navy">{contact("addressLabel")}</dt>
+                <dt className="font-extrabold text-ink">{contact("addressLabel")}</dt>
                 <dd className="mt-1 leading-relaxed text-muted">{contact("address")}</dd>
                 <a href={mapsLink()} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block font-bold text-ember">
                   {contact("directions")}
                 </a>
               </div>
               <div>
-                <dt className="font-extrabold text-navy">{contact("hoursLabel")}</dt>
+                <dt className="font-extrabold text-ink">{contact("hoursLabel")}</dt>
                 <dd className="mt-1 text-muted">{contact("hours")}</dd>
               </div>
               <div>
-                <dt className="font-extrabold text-navy">{contact("phoneLabel")}</dt>
+                <dt className="font-extrabold text-ink">{contact("phoneLabel")}</dt>
                 <dd className="mt-1">
-                  <a href={`tel:${site.phoneTel}`} dir="ltr" className="inline-block font-extrabold text-navy">
+                  <a href={`tel:${site.phoneTel}`} dir="ltr" className="inline-block font-extrabold text-ink">
                     {site.phoneDisplay}
                   </a>
                 </dd>

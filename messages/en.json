@@ -14,7 +14,9 @@
     "enroll": "Enroll",
     "menu": "Open menu",
     "close": "Close menu",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "themeDark": "Switch to dark mode",
+    "themeLight": "Switch to light mode"
   },
   "hero": {
     "badge": "Enrollment 2026-2027 is open",

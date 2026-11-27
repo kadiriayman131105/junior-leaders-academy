@@ -52,7 +52,7 @@ export function CareersForm() {
       : null;
 
   return (
-    <form ref={formRef} action={action} className="rounded-[1.75rem] bg-white p-5 shadow-card sm:p-7">
+    <form ref={formRef} action={action} className="rounded-[1.75rem] bg-card p-5 shadow-card sm:p-7">
       <input type="hidden" name="locale" value={locale} />
       <div className="hidden" aria-hidden="true">
         <label>
@@ -106,16 +106,16 @@ export function CareersForm() {
       </label>
       <label className="mt-4 block">
         <span className={labelClass}>{t("cv")}</span>
-        <input name="cv" type="file" accept=".pdf,.doc,.docx,application/pdf" className={`${fieldClass} file:me-3 file:rounded-full file:border-0 file:bg-orange-soft file:px-3 file:py-1.5 file:text-sm file:font-bold file:text-navy max-[380px]:file:me-2 max-[380px]:file:px-2`} />
+        <input name="cv" type="file" accept=".pdf,.doc,.docx,application/pdf" className={`${fieldClass} file:me-3 file:rounded-full file:border-0 file:bg-orange-soft file:px-3 file:py-1.5 file:text-sm file:font-bold file:text-ink max-[380px]:file:me-2 max-[380px]:file:px-2`} />
       </label>
       <p className="mt-3 text-sm leading-relaxed text-muted">{t("privacy")}</p>
       {state?.status === "success" ? (
-        <p className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-navy" role="status">
+        <p className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-ink" role="status">
           {t("success")}
         </p>
       ) : null}
       {error ? (
-        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-navy" role="alert">
+        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-ink" role="alert">
           <p>{error}</p>
           {state?.whatsapp ? (
             <a href={state.whatsapp} className="mt-2 inline-flex font-extrabold text-ember underline underline-offset-4" target="_blank" rel="noopener noreferrer">

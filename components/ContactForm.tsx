@@ -51,7 +51,7 @@ export function ContactForm() {
       : null;
 
   return (
-    <form ref={formRef} action={action} className="rounded-[1.75rem] bg-white p-5 shadow-card sm:p-7">
+    <form ref={formRef} action={action} className="rounded-[1.75rem] bg-card p-5 shadow-card sm:p-7">
       <input type="hidden" name="locale" value={locale} />
       <div className="hidden" aria-hidden="true">
         <label>
@@ -101,7 +101,7 @@ export function ContactForm() {
       <p className="mt-3 text-sm leading-relaxed text-muted">{t("privacy")}</p>
 
       {state?.status === "success" ? (
-        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-navy" role="status">
+        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-ink" role="status">
           <p>{t("success")}</p>
           {state.whatsapp ? (
             <a href={state.whatsapp} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex font-extrabold text-ember underline underline-offset-4">
@@ -112,7 +112,7 @@ export function ContactForm() {
       ) : null}
 
       {error ? (
-        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-navy" role="alert">
+        <div className="mt-4 rounded-2xl bg-orange-soft px-4 py-3 text-sm font-semibold text-ink" role="alert">
           <p>{error}</p>
           {state?.whatsapp ? (
             <a href={state.whatsapp} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex font-extrabold text-ember underline underline-offset-4">

@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --c-paper: 255 248 244;
+    --c-band: 255 255 255;
+    --c-card: 255 255 255;
+    --c-ink: 35 46 64;
+    --c-muted: 94 109 126;
+    --c-line: 232 223 214;
+    --c-soft: 255 241 230;
+    --c-sky: 231 241 248;
+    --c-ember: 194 78 2;
+    color-scheme: light;
+  }
+
+  html.dark {
+    --c-paper: 12 15 20;
+    --c-band: 18 23 32;
+    --c-card: 28 36 50;
+    --c-ink: 246 239 232;
+    --c-muted: 184 194 206;
+    --c-line: 52 62 78;
+    --c-soft: 62 38 22;
+    --c-sky: 24 36 48;
+    --c-ember: 255 168 92;
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: calc(5.5rem + env(safe-area-inset-top));
@@ -12,8 +38,8 @@
 
   body {
     overflow-x: clip;
-    background: #fff8f4;
-    color: #232e40;
+    background: rgb(var(--c-paper));
+    color: rgb(var(--c-ink));
     text-rendering: optimizeLegibility;
     overflow-wrap: break-word;
   }

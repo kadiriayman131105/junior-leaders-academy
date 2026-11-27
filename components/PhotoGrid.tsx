@@ -40,7 +40,7 @@ export function PhotoGrid({ photos, variant = "grid" }: { photos: SchoolPhoto[];
   function tile(photo: SchoolPhoto, photoIndex: number, frame: string) {
     return (
       <li key={`${photo.src}-${photoIndex}`}>
-        <button type="button" onClick={() => setIndex(photoIndex)} className="group block w-full rounded-2xl bg-white p-1 text-start shadow-card ring-1 ring-orange/30 sm:rounded-[1.35rem] sm:p-2">
+        <button type="button" onClick={() => setIndex(photoIndex)} className="group block w-full rounded-2xl bg-card p-1 text-start shadow-card ring-1 ring-orange/30 sm:rounded-[1.35rem] sm:p-2">
           <span className={`block overflow-hidden rounded-[0.85rem] sm:rounded-[0.95rem] ${frame}`}>
             <img
               src={photo.src}
@@ -62,7 +62,7 @@ export function PhotoGrid({ photos, variant = "grid" }: { photos: SchoolPhoto[];
           <ul className="grid grid-cols-2 gap-2 sm:grid-cols-6 sm:gap-4">
             {photos.slice(0, 3).map((photo, photoIndex) => (
               <li key={`${photo.src}-${photoIndex}`} className={photoIndex === 0 ? "col-span-2 sm:col-span-4 sm:row-span-2" : "sm:col-span-2"}>
-                <button type="button" onClick={() => setIndex(photoIndex)} className="group relative block h-full w-full rounded-2xl bg-white p-1 text-start shadow-card ring-1 ring-orange/30 sm:rounded-[1.35rem] sm:p-2">
+                <button type="button" onClick={() => setIndex(photoIndex)} className="group relative block h-full w-full rounded-2xl bg-card p-1 text-start shadow-card ring-1 ring-orange/30 sm:rounded-[1.35rem] sm:p-2">
                   <span className={`block overflow-hidden rounded-[0.85rem] sm:rounded-[0.95rem] ${photoIndex === 0 ? "aspect-[4/3] sm:absolute sm:inset-2 sm:aspect-auto" : "aspect-[4/3]"}`}>
                     <img
                       src={photo.src}

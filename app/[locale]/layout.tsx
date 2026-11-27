@@ -10,6 +10,7 @@ import { MobileCallBar } from "@/components/MobileCallBar";
 import { SchoolJsonLd } from "@/components/SchoolJsonLd";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
 import { routing, type Locale } from "@/i18n/routing";
+import { themeBoot } from "@/components/theme-boot";
 import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
@@ -17,7 +18,10 @@ const outfit = Outfit({ subsets: ["latin"], display: "swap" });
 const cairo = Cairo({ subsets: ["arabic", "latin"], display: "swap" });
 
 export const viewport: Viewport = {
-  themeColor: "#232E40",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FFF8F4" },
+    { media: "(prefers-color-scheme: dark)", color: "#0C0F14" },
+  ],
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -71,13 +75,16 @@ export default async function LocaleLayout({
   const font = locale === "ar" ? cairo.className : outfit.className;
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body className={`${font} pb-[calc(4.75rem+env(safe-area-inset-bottom))] lg:pb-0`}>
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
+      </head>
+      <body className={`${font} bg-paper text-ink pb-[calc(4.75rem+env(safe-area-inset-bottom))] lg:pb-0`}>
         <NextIntlClientProvider messages={messages}>
           <SchoolJsonLd locale={locale as Locale} description={meta("description")} />
           <a
             href="#contenu"
-            className="sr-only focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2"
+            className="sr-only focus:not-sr-only focus:absolute focus:start-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-card focus:px-4 focus:py-2 focus:text-ink"
           >
             {t("skip")}
           </a>

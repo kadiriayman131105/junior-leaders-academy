@@ -2,23 +2,27 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         orange: {
           DEFAULT: "#FC6703",
           deep: "#E05600",
-          soft: "#FFF1E6",
+          soft: "rgb(var(--c-soft) / <alpha-value>)",
         },
-        ember: "#C24E02",
+        ember: "rgb(var(--c-ember) / <alpha-value>)",
         navy: {
           DEFAULT: "#232E40",
           deep: "#161E2B",
         },
-        muted: "#5E6D7E",
-        paper: "#FFF8F4",
-        sky: "#E7F1F8",
-        line: "#E8DFD6",
+        ink: "rgb(var(--c-ink) / <alpha-value>)",
+        muted: "rgb(var(--c-muted) / <alpha-value>)",
+        paper: "rgb(var(--c-paper) / <alpha-value>)",
+        band: "rgb(var(--c-band) / <alpha-value>)",
+        card: "rgb(var(--c-card) / <alpha-value>)",
+        sky: "rgb(var(--c-sky) / <alpha-value>)",
+        line: "rgb(var(--c-line) / <alpha-value>)",
         whatsapp: "#0E7A45",
       },
       boxShadow: {

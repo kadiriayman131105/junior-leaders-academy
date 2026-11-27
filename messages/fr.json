@@ -14,7 +14,9 @@
     "enroll": "Inscription",
     "menu": "Ouvrir le menu",
     "close": "Fermer le menu",
-    "skip": "Aller au contenu"
+    "skip": "Aller au contenu",
+    "themeDark": "Passer en mode sombre",
+    "themeLight": "Passer en mode clair"
   },
   "hero": {
     "badge": "Inscriptions 2026-2027 ouvertes",

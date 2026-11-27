@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { CloseIcon, MenuIcon } from "@/components/Icons";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const sections = [
   { hash: "ecole", key: "school" },
@@ -43,21 +44,22 @@ export function Header() {
             priority
           />
           <span className="hidden min-w-0 leading-tight min-[480px]:block">
-            <span className="block truncate text-[15px] font-extrabold text-navy">Junior Leaders</span>
+            <span className="block truncate text-[15px] font-extrabold text-ink">Junior Leaders</span>
             <span className="block truncate text-[11px] font-bold uppercase tracking-[0.18em] text-ember">Academy</span>
           </span>
         </Link>
 
         <nav className="ms-4 hidden min-w-0 items-center gap-4 xl:ms-6 xl:gap-6 lg:flex">
           {sections.map((section) => (
-            <a key={section.hash} href={`/${locale}#${section.hash}`} className="whitespace-nowrap text-sm font-bold text-navy/80 hover:text-navy">
+            <a key={section.hash} href={`/${locale}#${section.hash}`} className="whitespace-nowrap text-sm font-bold text-ink/80 hover:text-ink">
               {t(section.key)}
             </a>
           ))}
         </nav>
 
         <div className="ms-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
-          <div className="flex rounded-full bg-white p-0.5 shadow-sm ring-1 ring-navy/10 sm:p-1">
+          <ThemeToggle />
+          <div className="flex rounded-full bg-card p-0.5 shadow-sm ring-1 ring-line sm:p-1">
             {locales.map((item) => (
               <button
                 key={item.code}
@@ -65,7 +67,7 @@ export function Header() {
                 lang={item.code}
                 onClick={() => router.replace(pathname, { locale: item.code })}
                 className={`min-h-9 min-w-9 rounded-full px-2 py-1 text-[11px] font-extrabold sm:min-h-0 sm:min-w-0 sm:px-2.5 sm:text-xs ${
-                  locale === item.code ? "bg-navy text-white" : "text-navy hover:bg-orange-soft"
+                  locale === item.code ? "bg-navy text-white" : "text-ink hover:bg-orange-soft"
                 }`}
                 aria-current={locale === item.code ? "true" : undefined}
               >
@@ -78,7 +80,7 @@ export function Header() {
           </a>
           <button
             type="button"
-            className="grid h-11 w-11 place-items-center rounded-full text-navy lg:hidden"
+            className="grid h-11 w-11 place-items-center rounded-full text-ink lg:hidden"
             aria-expanded={open}
             aria-label={open ? t("close") : t("menu")}
             onClick={() => setOpen((value) => !value)}
@@ -89,13 +91,13 @@ export function Header() {
       </div>
 
       {open ? (
-        <nav className="max-h-[calc(100dvh-4.5rem-env(safe-area-inset-top))] overflow-y-auto border-t border-line bg-white py-3 lg:hidden">
+        <nav className="max-h-[calc(100dvh-4.5rem-env(safe-area-inset-top))] overflow-y-auto border-t border-line bg-card py-3 lg:hidden">
           <div className="shell">
             {sections.map((section) => (
               <a
                 key={section.hash}
                 href={`/${locale}#${section.hash}`}
-                className="block rounded-2xl px-3 py-3 text-base font-bold text-navy hover:bg-orange-soft"
+                className="block rounded-2xl px-3 py-3 text-base font-bold text-ink hover:bg-orange-soft"
                 onClick={() => setOpen(false)}
               >
                 {t(section.key)}
